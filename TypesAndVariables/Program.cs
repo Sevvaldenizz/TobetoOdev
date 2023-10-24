@@ -9,7 +9,7 @@ namespace TypesAndVariables
             //Value Types
             // Console.WriteLine("Hello, World!");
 
-             
+            
             double number5 = 10.4;
             decimal number6 = 10;
             char character = 'A';
@@ -18,6 +18,7 @@ namespace TypesAndVariables
             short number3 = -32768;
             int number1 = 2147483647;
             long number2 = 2147483648;
+            
 
             Console.WriteLine("Number1 is {0}", number1);
             Console.WriteLine("Number2 is {0}", number2);
@@ -25,7 +26,16 @@ namespace TypesAndVariables
             Console.WriteLine("Number4 is {0}", number4);
             Console.WriteLine("Number5 is {0}", number5);
             Console.WriteLine("Character is: {0}", (int)character);
+            Console.WriteLine((int)Days.Friday);
             Console.ReadLine();
+
         }
+    }
+
+
+
+    enum Days
+    {
+         Monday=10, Tuesday=20, Wednesday=30,Thuresday,Friday,Saturday,Sunday
     }
 }
