@@ -20,7 +20,7 @@ namespace TypesAndVariables
             long number2 = 2147483648;
             var number7 = 10;
             number7 = 'A';
-            number7 = "A";
+            //number7 = "A";
             
 
             Console.WriteLine("Number1 is {0}", number1);
