@@ -1,4 +1,6 @@
-﻿namespace TypesAndVariables
+﻿using System;
+
+namespace TypesAndVariables
 {
     internal class Program
     {
@@ -7,7 +9,9 @@
             //Value Types
             // Console.WriteLine("Hello, World!");
 
+             
             double number5 = 10.4;
+            decimal number6 = 10;
             char character = 'A';
             bool condition = false;
             byte number4 = 255;
