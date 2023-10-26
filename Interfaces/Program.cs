@@ -8,9 +8,19 @@ namespace Interfaces
 {
     internal class Program
     {
-        private static object manager;
+        private static object Manager;
 
         static void Main(string[] args)
+        {
+            //IntarfacesIntro();
+
+            CustomerManager customerManager=new CustomerManager();
+            customerManager.Add(new OracleCustomerDal());
+            
+            Console.ReadLine();
+        }
+
+        private static void IntarfacesIntro()
         {
             PersonManager Manager = new PersonManager();
             Customer customer = new Customer
@@ -31,7 +41,7 @@ namespace Interfaces
             };
             Manager.Add(customer);
             Manager.Add(student);
-            Console.ReadLine();
+            Console.ReadLine() ;    
         }
     }
 
