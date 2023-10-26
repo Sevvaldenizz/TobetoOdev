@@ -10,12 +10,12 @@ namespace Classes
     {
 
         public int Id { get; set; }
-        public string firstName { get; set; }
+        public string? FirstName { get; set; }
 
-        public string Lastname { get; set; }
-        public string City { get; set; }
-
-
+        public string? LastName { get; set; }
+        
+        
+        public string? City { get; set; }
     }
 }
 
