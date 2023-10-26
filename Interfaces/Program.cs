@@ -14,10 +14,29 @@ namespace Interfaces
         {
             //IntarfacesIntro();
 
-            CustomerManager customerManager=new CustomerManager();
-            customerManager.Add(new OracleCustomerDal());
-            
+            //Demo();
+
+            ICustomerDal[] customerDals = new ICustomerDal[3]
+            {
+              new sqlServerCustomerDal(),
+              new OracleCustomerDal(),
+              new MySqlCustomerDal(),
+            };
+
+            foreach (var customerDal in customerDals) 
+            {
+                customerDal.Add();
+            }
+
+
+
             Console.ReadLine();
+        }
+
+        private static void Demo()
+        {
+            CustomerManager customerManager = new CustomerManager();
+            customerManager.Add(new OracleCustomerDal());
         }
 
         private static void IntarfacesIntro()
